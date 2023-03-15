@@ -1,0 +1,268 @@
+.hidden {
+  display: none;
+}
+
+.graphContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 386px;
+  position: relative;
+  padding-right: 18px;
+  border: 1px solid #e8ecef;
+  border-radius: 10px;
+  box-shadow: 0 5px 14px rgb(120 146 141 / 5%);
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.graphContainer--fullSize {
+  width: 1000px;
+  /* padding-top: 70px; */
+}
+
+.scrollAreaLG {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  overflow-x: overlay;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 100%;
+  cursor: all-scroll;
+  margin-top: 68px;
+}
+
+.scrollAreaLG--multiSeries {
+  position: relative;
+}
+
+.scrollAreaLG--fullSize {
+  height: 600px;
+}
+
+.scrollAreaLG::-webkit-scrollbar-track {
+  margin-left: 33px;
+}
+
+.scrollAreaLG::-webkit-scrollbar {
+  width: 10px;
+  padding-top: 40px;
+}
+
+.scrollAreaLG::-webkit-scrollbar-track {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.scrollAreaLG::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.scrollAreaLG::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+.yAxisLabelsGroup {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+  width: 42px;
+  padding-right: 3px;
+}
+
+.yAxisLabelsGroup--fullSize {
+  width: 44px;
+  padding-right: 0;
+}
+
+.yAxisTitle {
+  position: relative;
+  z-index: 105;
+  width: 100%;
+  transform: rotate(270deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  align-self: center;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.xAxisTitle {
+  position: absolute;
+  bottom: 34px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  width: 266px;
+  margin-left: 66px;
+}
+
+.xAxisTitle--fullSize {
+  width: 876px;
+  margin-left: 96px;
+  font-size: 13px;
+}
+
+.legendSymbol {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin-right: 7px;
+}
+
+.legends {
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  color: #a1a7c4;
+}
+
+.legend {
+  margin-right: 16px;
+}
+.canvas {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+}
+
+.canvas--multiSeries {
+  padding-bottom: 15px;
+}
+
+.canvas--fullSize {
+  padding-top: 6px;
+}
+
+.canvasGroup {
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  left: 24px;
+  top: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #089bab;
+  line-height: 1;
+  padding: 0;
+  /* margin-top: 20px;
+  margin-left: 20px; */
+}
+
+.title--fullSize {
+  position: absolute;
+  left: 0;
+  top: 24px;
+  font-size: 22px;
+  margin-left: 96px;
+  width: 876px;
+  display: flex;
+  justify-content: center;
+}
+
+.yAxisLabels {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 50px;
+  left: 24px;
+  top: 63px;
+  bottom: 25px;
+  padding-left: 14px;
+  padding-right: 4px;
+  background-color: #fff;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+.yAxisLabels--fullSize {
+  top: 91px;
+}
+
+.yAxisLabel {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  text-align: right;
+  color: #a1a7c4;
+}
+
+.errMsgContainer {
+  width: 360px;
+  height: 351px;
+  position: relative;
+  padding: 26px;
+  border: 1px solid red;
+  border-radius: 10px;
+  box-shadow: 0 5px 14px rgb(120 146 141 / 5%);
+  margin: 0;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.errorMsg {
+  font-size: 16px;
+  color: red;
+  margin-top: 20px;
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 110;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(152, 169, 188, 0.3);
+  backdrop-filter: blur(46.2108px);
+}
+
+.closeIconContainer {
+  position: absolute;
+  top: 35px;
+  right: 36px;
+  cursor: pointer;
+}
+
+.noDataMessage {
+  position: absolute;
+  left: 130px;
+  bottom: 170px;
+  z-index: 100;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffbf00;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+}
+
+.noDataMessage--fullSize {
+  left: 448px;
+  bottom: 360px;
+}
